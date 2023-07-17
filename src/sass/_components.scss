@@ -15,8 +15,7 @@
     height: 100%;
     object-fit: cover;
   }
-  &__component {
-  }
+
   &__title {
     color: variables.$title-color;
     font-size: 1rem;
@@ -29,18 +28,27 @@
     padding: 0 10px;
     text-align: center;
   }
+  &__information {
+    display: flex;
+    padding: 15px;
+    background-color: variables.$background-color-light;
+    width: 100px;
+    height: 90px;
+    position: absolute;
+  }
   &__icon {
+    position: relative;
   }
   &__anual-plan {
+    position: relative;
+    color: variables.$title-color;
+    font-weight: bold;
   }
   &__anual-price {
+    position: relative;
+    color: variables.$text-color;
   }
   &__link {
-  }
-  &__button {
-    &-button-proceed {
-    }
-    &-buton-cancel {
-    }
+    position: relative;
   }
 }
