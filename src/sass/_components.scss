@@ -51,4 +51,19 @@
   &__link {
     position: relative;
   }
+  &__button {
+    font-weight: bold;
+    position: relative;
+
+    &-button-proceed {
+      background-color: variables.$primary-color;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    &-buton-cancel {
+      background-color: transparent;
+      color: variables.$text-color;
+    }
+  }
 }
