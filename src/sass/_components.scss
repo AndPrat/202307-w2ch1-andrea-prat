@@ -15,4 +15,32 @@
     height: 100%;
     object-fit: cover;
   }
+  &__component {
+  }
+  &__title {
+    color: variables.$title-color;
+    font-size: 1rem;
+    padding-top: 30px;
+    text-align: center;
+  }
+  &__text {
+    color: variables.$text-color;
+    font-size: 0.8rem;
+    padding: 0 10px;
+    text-align: center;
+  }
+  &__icon {
+  }
+  &__anual-plan {
+  }
+  &__anual-price {
+  }
+  &__link {
+  }
+  &__button {
+    &-button-proceed {
+    }
+    &-buton-cancel {
+    }
+  }
 }
