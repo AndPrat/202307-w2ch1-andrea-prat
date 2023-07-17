@@ -1,0 +1,69 @@
+@use "globals";
+@use "variables";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 30px;
+  overflow: hidden;
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    color: variables.$title-color;
+    font-size: 1rem;
+    padding-top: 30px;
+    text-align: center;
+  }
+  &__text {
+    color: variables.$text-color;
+    font-size: 0.8rem;
+    padding: 0 10px;
+    text-align: center;
+  }
+  &__information {
+    display: flex;
+    padding: 15px;
+    background-color: variables.$background-color-light;
+    width: 100px;
+    height: 90px;
+    position: absolute;
+  }
+  &__icon {
+    position: relative;
+  }
+  &__anual-plan {
+    position: relative;
+    color: variables.$title-color;
+    font-weight: bold;
+  }
+  &__anual-price {
+    position: relative;
+    color: variables.$text-color;
+  }
+  &__link {
+    position: relative;
+  }
+  &__button {
+    font-weight: bold;
+    position: relative;
+
+    &-button-proceed {
+      background-color: variables.$primary-color;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    &-buton-cancel {
+      background-color: transparent;
+      color: variables.$text-color;
+    }
+  }
+}
